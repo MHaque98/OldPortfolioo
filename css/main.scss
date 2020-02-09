@@ -1,0 +1,512 @@
+$primary: red;
+$secondary: pink;
+$text: whitesmoke;
+@import url("https://fonts.googleapis.com/css?family=Yantramanav&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: $text;
+}
+h1,
+h3 {
+  font-family: "Yantramanav", sans-serif;
+}
+
+nav {
+  background-color: transparent;
+  .navbar-nav {
+    border: solid 2px $text;
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin: 1em;
+    text-align: center;
+  }
+  .nav-item {
+    margin-top: 0px;
+    letter-spacing: 1px;
+  }
+  ul {
+    transition: background-color 0.2s ease-in;
+  }
+  a {
+    color: $text;
+    transition: all 0.3s;
+    &:hover {
+      font-weight: 400;
+      background-color: rgba(245, 245, 245, 0.274);
+      color: rgb(43, 43, 43);
+    }
+  }
+}
+.nav-scrolled {
+  background-color: rgba(14, 14, 14, 0.801);
+}
+hr {
+  background-color: $text;
+  height: 2px;
+}
+.header-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(3, 3, 3, 0.178)),
+    url("../Assets/images/header-bg4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header-title {
+    color: $text;
+    font-size: 6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .header-subtitle {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-top: $text 2px solid;
+    border-bottom: $text 2px solid;
+  }
+}
+@media (max-width: 1024px) {
+  .header-bg {
+    .header-title {
+      font-size: 3em;
+    }
+    .header-subtitle {
+      font-size: 1em;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .header-bg {
+    .header-title {
+      font-size: 2em;
+    }
+    .header-subtitle {
+      font-size: 1em;
+    }
+  }
+}
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+  margin: auto;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-size: 14px auto;
+  z-index: 2;
+  animation: bounce 2s infinite 2s;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
+  &:hover {
+    background-color: rgba(245, 245, 245, 0.274);
+  }
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+/*ABOUT SECTIOn*/
+.about-bg {
+  color: black;
+  background-color: #292929;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 50px solid rgb(3, 61, 53);
+  border-bottom: 50px solid rgb(3, 61, 53);
+  .about-sect {
+    padding: 3em 0;
+    background-color: rgba(4, 36, 33, 0.616);
+    background: linear-gradient(rgba(4, 36, 33, 0.616), rgba(4, 36, 33, 0.616)),
+      url("../Assets/images/about-bg5.jpg");
+    background-size: cover;
+
+    box-shadow: 0px 0px 12px 3px rgb(0, 0, 0);
+  }
+  .user-sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user {
+    width: 16em;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+  }
+  .sub-heading {
+    border: 2px $text solid;
+    width: 4.2em;
+    font-weight: 500;
+    text-align: center;
+  }
+  @media (max-width: 1024px) {
+    .sub-heading {
+      text-align: center;
+    }
+    .h1 {
+      text-align: center;
+    }
+    .user {
+      width: 9em;
+      margin: 25px;
+    }
+  }
+  @media (max-width: 48em) {
+    .sub-heading {
+      margin: auto;
+    }
+    p {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 1.7em;
+      padding-top: 2px;
+      text-align: center;
+    }
+
+    .user {
+      width: 5em;
+      margin: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+/*Skills Page*/
+.skills-bg {
+  background-color: #253946;
+  background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-top: 50px solid #012964;
+  border-bottom: 50px solid #012964;
+  .skills-sect {
+    padding: 2em 0;
+    background-color: rgba(6, 23, 58, 0.767);
+    background: linear-gradient(rgb(2, 30, 85), rgba(37, 82, 172, 0.459)),
+      url("../Assets/images/skills-bg8.jpg");
+    background-size: cover;
+
+    box-shadow: 0px 0px 12px 3px rgb(0, 0, 0);
+    .tools {
+      width: 40%;
+      margin: auto;
+    }
+  }
+  .sub-heading {
+    border: 2px $text solid;
+    width: 3.7em;
+    font-weight: 500;
+    margin: auto;
+  }
+
+  i {
+    font-size: 90px;
+  }
+
+  @media (max-width: 1024px) {
+    .skills-list {
+      padding: 1em;
+    }
+    i {
+      font-size: 65px;
+    }
+    .tools {
+      width: 65px;
+    }
+  }
+  @media (max-width: 767px) {
+    p {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 1.7em;
+      padding-top: 2px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.projects-bg {
+  background-color: #2b2929;
+  background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 50px solid #d48d07;
+  border-bottom: 50px solid #d48d07;
+  .sub-heading {
+    border: 2px $text solid;
+    font-weight: 500;
+    width: 6em;
+    margin: auto;
+  }
+
+  .portfolio-sect {
+    padding: 2em 0;
+    width: 100%;
+
+    /*background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(139, 93, 0, 0)),
+      url("../Assets/images/projects-bg9.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    //box-shadow: 0px 0px 12px 3px rgb(0, 0, 0);
+  }
+  .owl-prev,
+  .owl-next {
+    width: 100px;
+
+    padding: 10px;
+
+    border: 0px solid black;
+    i {
+      font-size: 50px;
+    }
+  }
+  .cards {
+    height: 16em;
+
+    .content-overlay {
+      background: rgba(255, 255, 255, 0.753);
+      position: absolute;
+      height: 86%;
+      width: 100%;
+      left: 0;
+      top: 1;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+    }
+    &:hover .content-overlay {
+      opacity: 1;
+    }
+    &:hover .content-details {
+      top: 55%;
+      left: 50%;
+      opacity: 1;
+    }
+    .content-details {
+      position: absolute;
+      text-align: center;
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+    .fadeIn-bottom {
+      top: 80%;
+    }
+    .fadeIn-top {
+      top: 20%;
+    }
+
+    .fadeIn-left {
+      left: 20%;
+    }
+
+    .fadeIn-right {
+      left: 80%;
+    }
+    .content-title {
+      color: black;
+    }
+    .content-text {
+      color: rgb(255, 153, 0);
+      font-weight: 500;
+    }
+  }
+  @media (max-width: 1024px) {
+    .cards {
+      height: 12em;
+    }
+  }
+  @media (max-width: 767px) {
+    p {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 1.7em;
+      padding-top: 2px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-bg {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+.project-btn {
+  border-radius: 0px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  padding: 10px;
+
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: auto;
+  background: linear-gradient(to right, #e9aa22, #ee9f0d) !important;
+}
+.project-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.project-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.project-btn:hover span {
+  padding-right: 25px;
+}
+.project-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.modal-content {
+  border-radius: 0px;
+  border: none;
+
+  .modal-header {
+    color: $text;
+    background-color: rgb(29, 29, 29);
+    border: none;
+    border-radius: 0px;
+    span {
+      color: rgb(255, 255, 255);
+    }
+  }
+  .modal-body {
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 0;
+    .project-img {
+      height: 17em;
+    }
+
+    .project-description {
+      color: rgb(31, 31, 31);
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+  .modal-footer {
+    color: $text;
+
+    border: none;
+    border-radius: 0px;
+  }
+}
+.img1 {
+  background: url(../Assets/images/gamequiz.PNG) center center/cover;
+}
+.img2 {
+  background: url(../Assets/images/googleclone.PNG) center center/cover;
+}
+.img3 {
+  background: url(../Assets/images/memegenerator.PNG) center center/cover;
+}
+.img4 {
+  background: url(../Assets/images/tax-calculator.PNG) center center/cover;
+}
+.img5 {
+  background: url(../Assets/images/saveocean.PNG) center center/cover;
+}
+.img6 {
+  background: url(../Assets/images/plane.PNG) center center/cover;
+}
+#sticky-footer {
+  background-color: #1b1b1bc7;
+  i {
+    color: $text;
+    font-size: 30px;
+    padding: 0 7px;
+  }
+}
