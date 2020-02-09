@@ -57,8 +57,8 @@ hr {
   height: 2px;
 }
 .header-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(3, 3, 3, 0.178)),
-    url("../Assets/images/header-bg4.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(3, 3, 3, 0.178)),
+    url("../Assets/images/header-bg5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,9 +154,8 @@ hr {
 /*ABOUT SECTIOn*/
 .about-bg {
   color: black;
-  background-color: #292929;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #f7fffb;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
 
   height: 100vh;
   overflow: hidden;
@@ -224,10 +223,8 @@ hr {
 
 /*Skills Page*/
 .skills-bg {
-  background-color: #253946;
-  background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
+  background-color: #f5fdff;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -237,10 +234,13 @@ hr {
   border-top: 50px solid #012964;
   border-bottom: 50px solid #012964;
   .skills-sect {
-    padding: 2em 0;
+    padding: 0.2em 0;
     background-color: rgba(6, 23, 58, 0.767);
-    background: linear-gradient(rgb(2, 30, 85), rgba(37, 82, 172, 0.459)),
-      url("../Assets/images/skills-bg8.jpg");
+    background: linear-gradient(
+        rgba(2, 30, 85, 0.747),
+        rgba(37, 82, 172, 0.459)
+      ),
+      url("../Assets/images/skills-bg9.jpg");
     background-size: cover;
 
     box-shadow: 0px 0px 12px 3px rgb(0, 0, 0);
@@ -287,16 +287,15 @@ hr {
 }
 
 .projects-bg {
-  background-color: #2b2929;
-  background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #5c5c5c;
+  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
   height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 50px solid #d48d07;
-  border-bottom: 50px solid #d48d07;
+  border-top: 50px solid #d4c607;
+  border-bottom: 50px solid #d4c607;
   .sub-heading {
     border: 2px $text solid;
     font-weight: 500;

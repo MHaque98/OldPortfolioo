@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -14,30 +14,29 @@ body {
 
 @font-face {
   font-family: "Assassin";
-  src: url("../Assets/fonts/Assassin$.ttf") format("truetype");
+  src: url("/Assets/fonts/Assassin$.ttf") format("truetype");
 }
 
 a {
-  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png),
-    auto;
+  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png), auto;
 }
 
 /* +++++ HOME PAGE ++++++*/
 .home-screen {
   width: 100vw;
   height: 100vh;
-  background: url("../Assets/images/home-bg.png") center no-repeat;
+  background: url("/Assets/images/home-bg.png") center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
 }
 
@@ -63,8 +62,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 0px;
   border: none;
   color: #ffffff;
@@ -80,13 +79,7 @@ a {
 }
 
 .home-screen .btn-col {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#215272),
-    to(#4ca2cb)
-  ) !important;
+  background: -webkit-gradient(linear, left top, right top, from(#215272), to(#4ca2cb)) !important;
   background: linear-gradient(to right, #215272, #4ca2cb) !important;
 }
 
@@ -125,8 +118,7 @@ a {
 
 .home-screen #header i {
   font-size: 30px;
-  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png),
-    auto;
+  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png), auto;
 }
 
 .home-screen #header i:hover {
@@ -191,8 +183,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 0px;
   border: none;
   color: #ffffff;
@@ -204,19 +196,12 @@ a {
   width: 120px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png),
-    auto;
+  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png), auto;
   margin: auto;
 }
 
 .modal-content .btn-col {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#215272),
-    to(#4ca2cb)
-  ) !important;
+  background: -webkit-gradient(linear, left top, right top, from(#215272), to(#4ca2cb)) !important;
   background: linear-gradient(to right, #215272, #4ca2cb) !important;
 }
 
@@ -259,12 +244,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
 }
 
@@ -273,8 +258,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .game-page .question-box {
@@ -285,9 +270,9 @@ a {
 .game-page .question-box .q-image {
   height: 100%;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .game-page audio {
@@ -312,12 +297,11 @@ a {
 }
 
 .game-page .choice-container:hover {
-  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png),
-    auto;
+  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png), auto;
   -webkit-box-shadow: 0 0.1rem 1.2rem 0 rgba(148, 212, 245, 0.5);
-  box-shadow: 0 0.1rem 1.2rem 0 rgba(148, 212, 245, 0.5);
+          box-shadow: 0 0.1rem 1.2rem 0 rgba(148, 212, 245, 0.5);
   -webkit-transform: translateY(-0.1rem);
-  transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
   -webkit-transition: -webkit-transform 150ms;
   transition: -webkit-transform 150ms;
   transition: transform 150ms;
@@ -378,7 +362,7 @@ a {
 .end-screen {
   width: 100vw;
   height: 100vh;
-  background: url("../Assets/images/end-bg.jpg") center no-repeat;
+  background: url("/Assets/images/end-bg.jpg") center no-repeat;
   background-size: cover;
   background-size: cover;
   display: -webkit-box;
@@ -386,8 +370,8 @@ a {
   display: flex;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
 }
 
@@ -400,8 +384,8 @@ a {
   display: flex;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .end-screen #end h3 {
@@ -415,8 +399,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 0px;
   border: none;
   color: #ffffff;
@@ -428,19 +412,12 @@ a {
   width: 200px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png),
-    auto;
+  cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png), auto;
   margin: auto;
 }
 
 .end-screen .btn-col {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#215272),
-    to(#4ca2cb)
-  ) !important;
+  background: -webkit-gradient(linear, left top, right top, from(#215272), to(#4ca2cb)) !important;
   background: linear-gradient(to right, #215272, #4ca2cb) !important;
 }
 
