@@ -12,7 +12,7 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 @font-face {
   font-family: "Assassin";
-  src: url("/Assets/fonts/Assassin$.ttf") format("truetype");
+  src: url("../Assets/fonts/Assassin$.ttf") format("truetype");
 }
 a {
   cursor: url(https://img.icons8.com/ultraviolet/30/000000/hand-cursor.png),
@@ -22,7 +22,7 @@ a {
 .home-screen {
   width: 100vw;
   height: 100vh;
-  background: url("/Assets/images/home-bg.png") center no-repeat;
+  background: url("../Assets/images/home-bg.png") center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;

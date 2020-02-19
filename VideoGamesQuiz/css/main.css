@@ -14,7 +14,7 @@ body {
 
 @font-face {
   font-family: "Assassin";
-  src: url("/Assets/fonts/Assassin$.ttf") format("truetype");
+  src: url("../Assets/fonts/Assassin$.ttf") format("truetype");
 }
 
 a {
@@ -25,7 +25,7 @@ a {
 .home-screen {
   width: 100vw;
   height: 100vh;
-  background: url("/Assets/images/home-bg.png") center no-repeat;
+  background: url("../Assets/images/home-bg.png") center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
